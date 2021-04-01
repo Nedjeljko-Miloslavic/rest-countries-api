@@ -113,7 +113,7 @@ function populate_info_dom(i,j,countries_all){
 	flag_array[i].style.backgroundImage = "url("+countries_all[j].flag+")";
 	name_array[i].innerHTML = countries_all[j].name;
 	native_name_array[i].innerHTML = countries_all[j].nativeName;
-	population_array[i].innerHTML = countries_all[j].population;
+	population_array[i].innerHTML = countries_all[j].population.toLocaleString("en-GB");
 	region_array[i].innerHTML = countries_all[j].region;
 	sub_region_array[i].innerHTML = countries_all[j].subregion;
 	top_level_domain_array[i].innerHTML = countries_all[j].topLevelDomain;
@@ -141,6 +141,7 @@ function populate_info_dom(i,j,countries_all){
 		border_countries_array[i].innerHTML += "<span>This country doesn't share land border with any other country</span>";
 	}
 }
+
 
 function populate_entire_dom(j,countries){
 	 for(let i=0; i<card_array.length; i++){
