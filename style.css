@@ -746,6 +746,16 @@ img{
 		display:none;
 		animation:none;
 	}
+	
+	.light .scroll_left{
+		display:none;
+		animation:none;
+	}
+	
+	.light .scroll_right{
+		display:none;
+		animation:none;
+	}
 
 	#scrolls{
 		display:flex;
